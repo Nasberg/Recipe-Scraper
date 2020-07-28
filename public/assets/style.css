@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #FF4EB6;
+}
+
+.card {
+  background-color: #FFAFDE;
+}
+
+.btn-primary {
+  background-color: #4EFFFF;
+  border-color: #4EFFFF;
+}
+
+.btn-primary:hover {
+  background-color: white;
+  color: #4EFFFF;
+  border-color: #4EFFFF;
+}
+
+.btn-outline-secondary, .btn-outline-danger {
+  background-color: white;
+}
+
+#addIngredientCard {
+  background-color: white;
+}

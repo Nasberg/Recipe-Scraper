@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Recept</title>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/3ab7d1c18b.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/assets/style.css">
+    <script src="/assets/script.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row py-3">
+        <div class="col-12 mx-auto my-auto">
+          <div class="card px-3 py-4">
+            <div class="row">
+              <div class="col-4 my-auto">
+                <div class="input-group input-group-lg">
+                  <input type="text" class="form-control" id="addIngredientInput" placeholder="Skriv in ingrediens..." aria-describedby="addIngredientBtn">
+                  <div class="input-group-append">
+                    <button type="button" class="btn btn-outline-secondary" id="addIngredientBtn">
+                      <i class="fas fa-plus-circle"></i> Lägg till ingrediens
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 my-auto">
+                <div class="card py-4 px-3" id="addIngredientCard">
+                  <div class="row">
+                    <div class="col-12" id="addedIngredientHub"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-2 my-auto mx-auto">
+                <div class="row">
+                  <div class="col-12">
+                    <button type="button" class="btn btn-lg btn-outline-danger mx-auto" id="clearSearchListBtn">Rensa sökningen</button>
+                  </div>
+                </div>
+                <div class="row my-3">
+                  <div class="col-12">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="check_3857">
+                      <label class="custom-control-label" for="check_3857">Snabblagat</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="check_3854">
+                      <label class="custom-control-label" for="check_3854">Vegetariskt</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="check_234">
+                      <label class="custom-control-label" for="check_234">Veganskt</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="check_3852">
+                      <label class="custom-control-label" for="check_3852">Glutenfritt</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="check_3853">
+                      <label class="custom-control-label" for="check_3853">Laktosfritt</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-2 my-auto mx-auto">
+                <button class="btn btn-lg btn-primary mx-auto" type="button" id="searchBtn">
+                  <i class="fas fa-search"></i> Sök
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" id="contentCard"></div>
+      </div>
+    </div>
+  </body>
+</html>
