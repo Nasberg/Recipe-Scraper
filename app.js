@@ -6,7 +6,7 @@ const mongoose = require('mongoose');
 const recipeController = require('./controllers/recipeController');
 
 // connect to mongodb
-mongoose.connect('mongodb+srv://maxedevents:maxedevents@eriksfirstcluster-0kjfp.gcp.mongodb.net/recipes_db?retryWrites=true&w=majority');
+mongoose.connect('mongodb+srv://USERNAME:PASSWORD@CLUSTER/DATABASE?retryWrites=true&w=majority');
 let db = mongoose.connection;
 
 // check mongodb connection
